@@ -35,19 +35,19 @@ public class ConverterIf implements Converter{
 
     public String convertDay(int dayNumber) {
         if (dayNumber == 1) {
-            return "Sunday";
-        } else if (dayNumber == 2) {
             return "Monday";
-        } else if (dayNumber == 3) {
+        } else if (dayNumber == 2) {
             return "Tuesday";
-        } else if (dayNumber == 4) {
+        } else if (dayNumber == 3) {
             return "Wednesday";
-        } else if (dayNumber == 5) {
+        } else if (dayNumber == 4) {
             return "Thursday";
-        } else if (dayNumber == 6) {
+        } else if (dayNumber == 5) {
             return "Friday";
-        } else if (dayNumber == 7) {
+        } else if (dayNumber == 6) {
             return "Saturday";
+        } else if (dayNumber == 7) {
+            return "Sunday";
         } else {
             return "Invalid input";
         }

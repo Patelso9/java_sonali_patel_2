@@ -14,33 +14,48 @@ public class IceCream {
         this.quantity = quantity;
     }
 
-//    Provided
-    public void refillQty(double amount){
-        this.quantity += amount;
+    public IceCream(int quantity) {
+        this.quantity = quantity;
     }
 
-    public void scoop(int scoops) {
-        this.quantity -= scoops * 10;
-        System.out.format("Thanks that will be %f dollars!", price * scoops);
-    }
-
-    public void sample() {
-        this.quantity--;
-    }
-
-
-//    Customer print
-//    public void customerOrder(String flavor, double quantity){
-//        System.out.println("Next order: " + quantity +" scoops of " +flavor );
-//    };
+    //    Customer print
+    public void customerOrder(String flavor, double quantity){
+        System.out.println("Next order: " + quantity +" scoops of " +flavor );
+    };
 //
-//    public double orderCost(double price, int quantity){
-//        double total = price * quantity;
-//        System.out.println("Charging $" + price + "for "+ quantity + "scoops. Customer Total= $" + total);
-//        return total;
-//    }
+    public double orderCost(double price, int quantity){
+        double total = price * quantity;
+        System.out.println("Charging $" + price + "for "+ quantity + "scoops. Customer Total= $" + total);
+        return total;
+    }
 
+    public double convertQtyToOz(int quantity, String flavor){
+        double ozCalc = quantity * 3.1;
+        System.out.println("Customer ordered " + ozCalc + "oz of " + flavor);
+        return ozCalc;
+    }
 
+    public String getFlavor() {
+        return flavor;
+    }
 
+    public void setFlavor(String flavor) {
+        this.flavor = flavor;
+    }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 }
