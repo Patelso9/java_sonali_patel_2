@@ -7,11 +7,11 @@ public class Farmer extends Character {
     }
 
     public void plow() {
-        System.out.println("Work, work, work...");
+        System.out.println("Plow all day");
     }
 
     public void harvest() {
-        System.out.println("Hi-ho, hi-ho. It's off to the silo we go!");
+        System.out.println("Harvesting Food");
     }
 
 }

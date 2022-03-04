@@ -10,7 +10,7 @@ public class Constable extends Character{
     }
 
     public void arrest(Character enemy) {
-        System.out.format("Hey %s! Halt! You're under arrest", enemy.getName());
+        System.out.format("Stop! You're under arrest ", enemy.getName());
     }
 
     public String getJurisdiction() {
